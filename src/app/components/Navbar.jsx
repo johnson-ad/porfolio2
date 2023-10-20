@@ -28,7 +28,7 @@ const Navbar = () => {
       <div className="flex container lg:py-4 flex-wrap items-center justify-between mx-auto px-4 py-2">
         <Link
           href={"/"}
-          className="text-2xl md:text-5xl text-white font-semibold bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500"
+          className="text-2xl md:text-5xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600"
         >
           LOGO
         </Link>
@@ -36,14 +36,14 @@ const Navbar = () => {
           {!navbarOpen ? (
             <button
               onClick={() => setNavbarOpen(true)}
-              className="flex items-center px-3 py-2 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 border rounded border-slate-200 text-slate-200 hover:text-white hover:border-white"
+              className="flex items-center px-3 py-2 hover:text-white hover:border-white"
             >
-              <Bars3Icon className="h-5 w-5" />
+              <Bars3Icon className="h-8 w-7" />
             </button>
           ) : (
             <button
               onClick={() => setNavbarOpen(false)}
-              className="flex items-center px-3 py-2 border rounded border-slate-200 text-slate-200 hover:text-white hover:border-white"
+              className="flex items-center px-3 py-2"
             >
               <XMarkIcon className="h-5 w-5" />
             </button>
